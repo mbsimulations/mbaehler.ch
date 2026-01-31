@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Blowfish"
+title = "Marco Bähler"
 
 [params]
   displayName = "EN"
@@ -17,7 +17,7 @@ title = "Blowfish"
 [params.author]
   name = "Marco Bähler"
   email = "hello.4m495@simplelogin.com"
-  image = "img/blowfish_logo.png"
+  image = "profile.jpg"
   imageQuality = 96
   headline = "Linux System Engineer | Flightsimmer | Hobby Photographer"
   links = [
