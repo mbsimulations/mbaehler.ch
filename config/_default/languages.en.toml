@@ -14,15 +14,15 @@ title = "Blowfish"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
-# [params.author]
-#   name = "Your name here"
-#   email = "youremail@example.com"
-#   image = "img/blowfish_logo.png"
-#   imageQuality = 96
-#   headline = "I'm only human"
-#   bio = "A little bit about you"
-#   links = [
-#     { email = "mailto:hello@your_domain.com" },
+[params.author]
+  name = "Marco Bähler"
+  email = "hello.4m495@simplelogin.com"
+  image = "img/blowfish_logo.png"
+  imageQuality = 96
+  headline = "About me"
+  bio = "Linux System Engineer | Homelabber | Flightsimmer"
+  links = [
+    { email = "mailto:hello.4m495@simplelogin.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
@@ -45,7 +45,7 @@ title = "Blowfish"
 #     { keyoxide = "https://keyoxide.org/URI" },
 #     { kickstarter = "https://www.kickstarter.com/profile/username" },
 #     { lastfm = "https://lastfm.com/user/username" },
-#     { linkedin = "https://linkedin.com/in/username" },
+    { linkedin = "https://www.linkedin.com/in/marco-b%C3%A4hler-739792157/" },
 #     { mastodon = "https://mastodon.instance/@username" },
 #     { matrix = "https://matrix.to/#/URI" },
 #     { medium = "https://medium.com/username" },
