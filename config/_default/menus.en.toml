@@ -22,7 +22,7 @@
 
 [[main]]
   name = "Gallery"
-  pageRef = "projects"
+  pageRef = "gallery"
   weight = 10
 
 #[[main]]
