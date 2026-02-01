@@ -1,7 +1,7 @@
 ---
 title: "Template"
 date: 2026-01-31
-draft: false
+draft: true
 tags: ["template"]
 ---
 
