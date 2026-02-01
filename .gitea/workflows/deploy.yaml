@@ -1,0 +1,63 @@
+name: Deploy Hugo site to VPS
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - main
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    env:
+      DART_SASS_VERSION: 1.97.3
+      HUGO_VERSION: 0.154.5
+      HUGO_ENVIRONMENT: production
+      TZ: Europe/Zurich
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Install Dart Sass
+        run: |
+          wget -O ${{ runner.temp }}/dart-sass.tar.gz https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+          tar -xf ${{ runner.temp }}/dart-sass.tar.gz --directory ${{ runner.temp }}
+          mv ${{ runner.temp }}/dart-sass/ /usr/local/bin
+          echo "/usr/local/bin/dart-sass" >> $GITHUB_PATH
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Build with Hugo
+        run: |
+          hugo \
+            --gc \
+            --minify
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H mbvm-web01.marcos.place >> ~/.ssh/known_hosts
+
+  # Deployment job - working config
+      - name: Deploy to server via rsync
+        uses: appleboy/scp-action@v1
+        with:
+          host: mbvm-web01.marcos.place
+          username: podman_mbaehler
+          port: 22
+          source: ./public/*
+          target: /opt/podman/mbaehler/public/
+          strip_components: 1
