@@ -44,19 +44,13 @@ jobs:
             --gc \
             --minify
 
-      - name: Set up SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H mbvm-web01.marcos.place >> ~/.ssh/known_hosts
-
   # Deployment job - working config
       - name: Deploy to server via rsync
         uses: https://github.com/appleboy/scp-action@v1
         with:
           host: mbvm-web01.marcos.place
           username: podman_mbaehler
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           source: ./public/*
           target: /opt/podman/mbaehler/public/
