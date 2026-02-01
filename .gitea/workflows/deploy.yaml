@@ -53,7 +53,7 @@ jobs:
 
   # Deployment job - working config
       - name: Deploy to server via rsync
-        uses: appleboy/scp-action@v1
+        uses: https://github.com/appleboy/scp-action@v1
         with:
           host: mbvm-web01.marcos.place
           username: podman_mbaehler
