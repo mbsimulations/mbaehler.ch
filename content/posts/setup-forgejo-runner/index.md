@@ -101,6 +101,22 @@ Enable the Podman socket for the runner user.
 systemctl --user enable --now podman.socket
 ```
 
+Create the default runner configuration file.
+
+```Bash
+forgejo-runner generate-config > config.yaml
+```
+
+{{< alert >}}
+**Warning!** If Podman runs on the same host as the Forgejo instance, the network mode in the config.yaml needs to be set to host, otherwise the runner will not be able to connect to the Forgejo server.
+{{< /alert >}}
+
+To set host networking change the following in the generated config.yaml file.
+
+```
+network: "host"
+```
+
 {{< keyword >}} root:# {{< /keyword >}}
 
 Now create the file **/etc/systemd/system/forgejo-runner.service** with the following content:
@@ -112,7 +128,7 @@ Documentation=https://forgejo.org/docs/latest/admin/actions/
 
 [Service]
 Environment=DOCKER_HOST=unix:///run/user/<USERID>/podman/podman.sock
-ExecStart=/usr/local/bin/forgejo-runner daemon
+ExecStart=/usr/local/bin/forgejo-runner daemon --config /home/podman_runner/config.yaml
 ExecReload=/bin/kill -s HUP $MAINPID
 
 # This user and working directory must already exist
