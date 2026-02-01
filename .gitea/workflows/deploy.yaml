@@ -1,4 +1,4 @@
-name: Deploy Hugo site to VPS
+name: Deploy Hugo Site to Webserver
 
 on:
   # Runs on pushes targeting the default branch
