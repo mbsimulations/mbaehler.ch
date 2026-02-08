@@ -27,6 +27,12 @@
  weight = 20
 
 [[main]]
+ name = "Dogs"
+ parent = "Gallery"
+ pageRef = "dogs"
+ weight = 20
+
+[[main]]
  name = "Planespotting"
  parent = "Gallery"
  pageRef = "planespotting"
