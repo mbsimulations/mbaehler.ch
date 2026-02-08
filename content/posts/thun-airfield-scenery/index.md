@@ -13,7 +13,16 @@ The scenery was even featured on [FSElite](https://fselite.net/content/mb-simula
 
 Here are a few images of the development process.
 
-
+{{< gallery 
+    match="images/*"
+    sortOrder="desc"
+    rowHeight="150"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
+    showExif=true
+    previewType="blur"
+    embedPreview=true
+    loadJQuery=true >}}
 
 <br>
 
@@ -21,7 +30,7 @@ Here are a few images of the development process.
 
 Since I left Microsoft Windows and fully switched to Linux I also started to use X-Plane 12 a lot more and it quickly became my main flight simulator. So I did a big update with new textures and details and made a version for X-Plane 12 too. It's been released on the [X-Plane.org Forums](https://forums.x-plane.org/files/file/95099-lszw-thun-airfield/)
 
-![X-Plane Version](featured.png)
+![X-Plane Version](featured.jpg)
 
 <br>
 
