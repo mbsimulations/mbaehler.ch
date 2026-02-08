@@ -2,7 +2,7 @@
 title: "Setup Forgejo Runner to use rootless Podman"
 date: 2026-02-01
 draft: false
-tags: ["git", "forgejo", "podman"]
+tags: ["git", "forgejo", "podman", "homelab"]
 ---
 
 By default the Forgejo runners usually need access to the Docker socket to be able to run actions in containers. It's also possible to do this with rootless Podman containers but needs to be configured this way.

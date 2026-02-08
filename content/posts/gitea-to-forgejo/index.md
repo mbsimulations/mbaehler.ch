@@ -2,7 +2,7 @@
 title: "Migrating from Gitea to Forgejo"
 date: 2026-01-31
 draft: false
-tags: ["git", "gitea", "forgejo"]
+tags: ["git", "gitea", "forgejo", "homelab"]
 ---
 
 I've been using Gitea for a few years now in my homelab. Mainly to manage my Ansible playbooks and roles and some personal projects. I've been very happy with it and never had any problems. But in 2022 Gitea became part of a profit oriented company, which might have impact on the future of the project. Also Gitea is developed completely in a [GitHub repository](https://github.com/go-gitea/gitea), which I always found a little weird. Why wouldn't they use their own project? Forgejo on the other hand host their project on [Codeberg](https://codeberg.org/forgejo/forgejo) which is actually running on Forgejo itself.
