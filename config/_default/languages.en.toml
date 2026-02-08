@@ -23,4 +23,6 @@ title = "Marco Bähler"
   links = [
     { email = "mailto:hello.4m495@simplelogin.com" },
     { linkedin = "https://www.linkedin.com/in/marco-b%C3%A4hler-739792157/" },
+    { mastodon = "https://mastodon.social/@mbaehler" },
+    { pixelfed = "https://pixelfed.social/mbaehler" },
   ]
