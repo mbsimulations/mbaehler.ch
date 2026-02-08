@@ -21,11 +21,6 @@
   weight = 10
 
 [[main]]
-  name = "Gallery"
-  pageRef = "gallery"
-  weight = 10
-
-[[main]]
  name = "Horses"
  parent = "Gallery"
  pageRef = "horses"
