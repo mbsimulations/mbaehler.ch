@@ -13,13 +13,7 @@ The scenery was even featured on [FSElite](https://fselite.net/content/mb-simula
 
 Here are a few images of the development process.
 
-{{< gallery >}}
-  <img src="gallery/preview01.png" class="grid-w33" />
-  <img src="gallery/preview02.png" class="grid-w33" />
-  <img src="gallery/preview03.png" class="grid-w33" />
-  <img src="gallery/preview04.png" class="grid-w33" />
-  <img src="gallery/preview05.png" class="grid-w33" />
-{{< /gallery >}}
+
 
 <br>
 

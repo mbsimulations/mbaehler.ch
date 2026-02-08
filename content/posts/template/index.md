@@ -52,16 +52,6 @@ Call to action
 
 <br>
 
-# Gallery
-
-{{< gallery >}}
-  <img src="gallery/01.jpg" class="grid-w33" />
-  <img src="gallery/02.jpg" class="grid-w33" />
-  <img src="gallery/03.jpg" class="grid-w33" />
-{{< /gallery >}}
-
-<br>
-
 # Icons
 
 Supported Icons: https://blowfish.page/samples/icons/
