@@ -1,7 +1,7 @@
 ---
 title: Obsidian to Hugo Workflow
 date: 2026-02-10
-draft: true
+draft: false
 tags:
   - automation
   - obsidian
@@ -20,7 +20,7 @@ Here's a few requirements that I had in mind.
 
 Whilst searching for ideas I stumbled upon NetworkChuck's video about this.
 
-{{< youtubeLite id="dnE7c0ELEH8&t" label="Hugo Obsidian Integration" >}}
+{{< youtubeLite id="dnE7c0ELEH8" label="Obsidian Hugo Workflow" >}}
 
 And also his [blog post](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/) 
 I also found another blog post from [4rkal](https://4rkal.com/posts/obsidianhugo/) 
@@ -31,7 +31,7 @@ I think I can get something nice up and running by combining the ideas of these 
 
 I created a folder called "Blog" in my Obsidian vault and copied the content of my Hugo content directory into it. This way I can edit blog posts as well as my other static sites.
 
-![[images/Screenshot from 2026-02-10 22-43-11.png]]
+![obsidian_blog](images/obsidian_blog.png)
 
 It's important that every post is called index in Obsidian, otherwise Hugo will not read it. To have the correct structure for metadata like tags etc. I created an Obsidian template.
 
@@ -106,10 +106,6 @@ git push
 
 I've installed the [shellcommands](https://github.com/Taitava/obsidian-shellcommands) plugin to run the scripts from inside Obsidian. In the plugin settings I configured two scripts.
 
-![[images/Screenshot from 2026-02-10 23-04-09.png]]
-
-![[images/Screenshot from 2026-02-10 23-09-16.png]]
-
-![[images/Screenshot from 2026-02-10 23-09-43.png]]
+![hugo-obsidian-01](images/hugo-obsidian-01.png)
 
 Now I can run the commands using Ctrl+P inside Obsidian and my changes will be pushed to my website.
