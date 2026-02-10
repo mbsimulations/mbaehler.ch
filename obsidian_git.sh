@@ -2,5 +2,5 @@
 cd /home/mbaehler/Documents/git/mbaehler.ch
 
 git add .
-git commit -m {{commitMessage}}
+git commit -m "{{_commitMessage}}"
 #git push
