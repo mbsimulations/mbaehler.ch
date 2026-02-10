@@ -1,7 +1,7 @@
 ---
 title: Obsidian to Hugo Workflow
 date: 2026-02-10
-draft: true
+draft: false
 tags:
   - automation
   - obsidian
@@ -98,7 +98,7 @@ It needs to be run directly from Obsidian to include the correct commit message.
 cd /home/mbaehler/Documents/git/mbaehler.ch
 
 git add .
-git commit -m "$commitMessage"
+git commit -m "chore: update blog via obsidian"
 git push
 ```
 
