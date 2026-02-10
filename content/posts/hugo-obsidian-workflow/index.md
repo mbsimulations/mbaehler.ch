@@ -1,7 +1,7 @@
 ---
 title: Obsidian to Hugo Workflow
 date: 2026-02-10
-draft: false
+draft: true
 tags:
   - automation
   - obsidian
