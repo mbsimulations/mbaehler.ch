@@ -1,3 +1,5 @@
+Visit my website here: https://mbaehler.ch
+
 # Initial setup
 
 ```Bash
