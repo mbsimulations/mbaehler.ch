@@ -1,7 +1,7 @@
 # Initial setup
 
 ```Bash
-# Install Hugo
+# Install Hugo on Arch based systems
 pacman -S hugo
 
 # Create new site with blowfish theme
