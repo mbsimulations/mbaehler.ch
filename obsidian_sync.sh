@@ -4,7 +4,7 @@
 set -euo pipefail
 
 # Set variables for Obsidian to Hugo copy
-sourcePath="/home/mbaehler/Documents/Obsidian/Marco/Blog/"
+sourcePath="/home/mbaehler/Documents/Obsidian/Marco/Blogs/mbaehler.ch/"
 destinationPath="/home/mbaehler/Documents/git/mbaehler.ch/content"
 
 # Check for required commands
