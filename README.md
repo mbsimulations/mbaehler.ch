@@ -1,3 +1,5 @@
+![Build](https://git.marcos.place/mbaehler/mbaehler.ch/actions/workflows/deploy.yaml/badge.svg?branch=main)
+
 Visit my website here: https://mbaehler.ch
 
 # Initial setup
